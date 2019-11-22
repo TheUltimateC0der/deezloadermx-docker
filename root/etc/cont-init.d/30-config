@@ -7,6 +7,14 @@ usermod -d /deez abc
 # permissions
 echo "[cont-init.d] Setting permissions this may take some time"
 
+wget https://notabug.org/RemixDevs/DeezloaderRemix/archive/development.zip && \
+    unzip development.zip && \
+    rm development.zip
+	
+cd deezloaderremix
+
+yarn install
+
 chown -R abc:abc \
  /deez/.config/Deezloader\ Remix/
 
