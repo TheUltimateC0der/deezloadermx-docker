@@ -18,16 +18,6 @@ RUN \
     rm -R /config && \
     ln -sf /deez/.config/Deezloader\ Remix/ /config && \
     ln -sf /downloads /deez/Deezloader\ Music
-
-RUN \
-    wget https://notabug.org/RemixDevs/DeezloaderRemix/archive/master.zip && \
-    unzip master.zip && \
-    rm master.zip
-
-WORKDIR /deezloaderremix
-
-RUN \
-    yarn install
   
 EXPOSE 1730
 
